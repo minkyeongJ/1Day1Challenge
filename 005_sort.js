@@ -7,36 +7,19 @@ let products = [
 ];
 // 가격낮은순 구하기
 // 가격높은순 구하기
-// 문자열의 오름차순 구하기
-// 문자열의 내림차순 구하기
 
 function priceASC(){
-    return products.sort(function (a,b){
+    return products.sort((a,b)=>{
         return a.price - b.price;
     });
 }
 
 function priceDESC(){
-    return products.sort(function (a,b){
+    return products.sort((a,b)=>{
         return b.price - a.price;
     });
 }
 
-// function titleASC(){
-//     return products.sort(function(a, b) {
-//         const upperCaseA = a.toUpperCase();
-//         const upperCaseB = b.toUpperCase();
-        
-//         if(upperCaseA > upperCaseB) return 1;
-//         if(upperCaseA < upperCaseB) return -1;
-//         if(upperCaseA === upperCaseB) return 0;
-//     });
-// }
-
-// let titleASC = products.map(e =>{
-
-// })
-
 console.log(priceASC());
 console.log(priceDESC());
-// console.log(titleASC());
+
